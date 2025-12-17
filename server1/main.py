@@ -6,7 +6,7 @@ from pathlib import Path
 
 app = FastAPI(title="Items API", version="1.0.0")
 
-DB_PATH = Path("data/db.json")
+DB_PATH = Path("db/shopping_list.json")
 
 class Item(BaseModel):
     id: int
