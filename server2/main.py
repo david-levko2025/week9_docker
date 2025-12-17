@@ -34,3 +34,9 @@ async def create_item2(item: Item):
     return {"messege":"Item created successfully",
             "item_id":item_id,
             "item":loading[item_id]}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8001)
+
