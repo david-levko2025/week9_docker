@@ -38,5 +38,6 @@ async def create_item2(item: Item):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app1, host="0.0.0.0", port=8001)
+
 
