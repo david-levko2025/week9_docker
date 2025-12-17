@@ -35,6 +35,9 @@ async def create_item2(item: Item):
             "item_id":item_id,
             "item":loading[item_id]}
 
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app1, host="0.0.0.0", port=8000)
+    uvicorn.run(app1, host="0.0.0.0", port=8001)
+
+
