@@ -29,7 +29,7 @@ async def list_items():
 async def create_item(item: Item):
     loading = load_database()
     item_id = str(len(loading)) + 1
-    loading[item_id] = {"name": item.name, "description": item.description, "price": item.price}
+    loading[item_id] = {"name": item.id, "description": item.name, "price": item.quantity}
     return {"messege":"Item created successfully",
             "item_id":item_id,
             "item":loading[item_id]}
